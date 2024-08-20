@@ -2,10 +2,10 @@
   "name": "release-please",
   "version": "16.12.0",
   "description": "generate release PRs based on the conventionalcommits.org spec",
-  "main": "./build/src/index.js",
-  "bin": "./build/src/bin/release-please.js",
+  "main": "./dist/src/index.js",
+  "bin": "./dist/src/bin/release-please.js",
   "scripts": {
-    "test": "cross-env ENVIRONMENT=test LC_ALL=en c8 mocha --node-option no-experimental-fetch --recursive --timeout=5000 build/test",
+    "test": "cross-env ENVIRONMENT=test LC_ALL=en c8 mocha --node-option no-experimental-fetch --recursive --timeout=5000 dist/test",
     "docs": "echo add docs tests",
     "test:snap": "cross-env SNAPSHOT_UPDATE=1 LC_ALL=en npm test",
     "clean": "gts clean",
@@ -16,9 +16,9 @@
     "pretest": "npm run compile"
   },
   "files": [
-    "build/src",
+    "dist/src",
     "templates",
-    "!build/src/**/*.map",
+    "!dist/src/**/*.map",
     "schemas"
   ],
   "repository": "googleapis/release-please",
