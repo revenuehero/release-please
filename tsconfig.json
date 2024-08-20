@@ -4,13 +4,14 @@
     "allowSyntheticDefaultImports": true,
     "lib": ["es2018", "dom"],
     "rootDir": ".",
-    "outDir": "build",
-    "typeRoots": ["./typings", "./node_modules/@types"]
+    "outDir": "dist",
+    "typeRoots": ["./typings", "./node_modules/@types"],
+    "sourceMap": false
   },
   "include": [
+    "test/**/*.ts",
     "typings/**/*.d.ts",
     "src/**/*.ts",
-    "test/**/*.ts",
     "system-test/*.ts"
   ]
 }

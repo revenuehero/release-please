@@ -5,6 +5,8 @@
 [![npm version](https://img.shields.io/npm/v/release-please.svg)](https://www.npmjs.org/package/release-please)
 [![codecov](https://img.shields.io/codecov/c/github/googleapis/release-please/main.svg?style=flat)](https://codecov.io/gh/googleapis/release-please)
 
+> Fork of release-please with RevenueHero specific setup
+
 Release Please automates CHANGELOG generation, the creation of GitHub releases,
 and version bumps for your projects.
 
@@ -203,7 +205,7 @@ Release Please automates releases for the following flavors of repositories:
 
 ## Setting up Release Please
 
-There are a variety of ways you can deploy release-please: 
+There are a variety of ways you can deploy release-please:
 
 ### GitHub Action (recommended)
 
@@ -216,7 +218,7 @@ Please see [Running release-please CLI](docs/cli.md) for all the configuration o
 ### Install the GitHub App
 
 There is a probot application available, which allows you to deploy Release
-Please as a GitHub App. Please see 
+Please as a GitHub App. Please see
 [github.com/googleapis/repo-automation-bots](https://github.com/googleapis/repo-automation-bots/tree/main/packages/release-please)
 for installation and configuration instructions.
 
